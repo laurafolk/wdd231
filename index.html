@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,45 @@
     <meta property="og:title" content="Laura M. Folk - WDD 231 - Web Frontend Development 1">
     <meta property="og:type" content="Home Page Website">
     <meta property="og:url" content="https://laurafolk.github.io/wdd231/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/courselist.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <header></header>
+    <header>
+        <img src="images/profile-picture.webp" alt="profile" class="responsive">
+        <h1>Laura M. Folk</h1>
+    </header>
     <nav>
         <a href='#' class="active">Home</a>
         <a href='chamber/'>Chamber</a>
         <a href="https://laurafolk.github.io/wdd231/">GitHub Profile</a>
-        <a href="https://www.linkedin.com/in/laurafolk-iamawesome1/">LinkedIn</a> 
+        <a href="https://www.linkedin.com/in/laurafolk-iamawesome1/">LinkedIn</a>
     </nav>
-    <main></main>
-    <footer></footer>    
+    <main>
+        <section class="card">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Saint Louis, Missouri</h2>
+        </section>
+        <sectioin class="card">
+            <h3>Web and Computer Programming Certificate</h3>
+        </sectioin>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear">2024</span> Laura M. Folk | United States</p>
+        <p>This was Last Modified on: <span id="lastModified"></span></p>
+        
+    </footer>
 </body>
+
 </html>
