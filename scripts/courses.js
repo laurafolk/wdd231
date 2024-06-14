@@ -1,3 +1,8 @@
+//Below is for selecting the menu buttons
+const homeButton = document.querySelector('#home-button');
+const chamberButton = document.querySelector('github-button');
+const githubButton = document.querySelector('linkedin-button');
+
 const courses = [
     {
         subject: 'CSE',
@@ -60,7 +65,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',

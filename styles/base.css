@@ -4,10 +4,6 @@ body {
     font-family: 'Poetsen' sans-serif;
 }
 
-head {
-    display: none;
-}
-
 header {
     width: 100%;
     display: flex;
@@ -20,8 +16,13 @@ header {
     padding: 1rem;
 }
 
+.responsive {
+    max-width: 35%;
+    height: auto;
+}
+
 header img {
-    max-width: 100px;
+    max-width: 35%;
     height: auto;
     border-radius: 50%;
 }
@@ -32,7 +33,7 @@ nav {
     width: 100%;        
     background-color: #53687E;
     justify-content: space-around;
-    /* padding: 1rem; */
+    padding: 1rem;
 }
 
 nav a:hover {

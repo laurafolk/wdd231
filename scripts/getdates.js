@@ -10,9 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var options = { year: 'numeric', month: 'long', day: 'numeric' };
     var formattedDate = lastModifiedDate.toLocaleDateString('en-us', options);
 
-    document.getElementById("lastModified").textContent = "Last Modified: " + formattedDate;
+    document.getElementById("lastModified").innerHTML = "Last Modified: " + formattedDate;
 });
 
+//Below is for the hamburgerButton
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
