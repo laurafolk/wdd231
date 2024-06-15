@@ -3,6 +3,15 @@ const homeButton = document.querySelector('#home-button');
 const chamberButton = document.querySelector('github-button');
 const githubButton = document.querySelector('linkedin-button');
 
+
+//Below is for the hamburgerButton
+const hamButton = document.querySelector('#menu');
+const nav = document.querySelector('.nav');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
 const courses = [
     {
         subject: 'CSE',

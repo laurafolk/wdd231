@@ -12,12 +12,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("lastModified").innerHTML = "Last Modified: " + formattedDate;
 });
-
-//Below is for the hamburgerButton
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
