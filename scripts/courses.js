@@ -89,5 +89,5 @@ const courses = [
             'JavaScript'
         ],
         completed: false
-    }
-]
+    },
+];
