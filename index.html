@@ -23,9 +23,9 @@
 <body>
     <header>
         <img src="images/profile-picture.webp" alt="profile" class="responsive">
-        <h1>Laura M. Folk - WDD 231 - Web Frontend Development 1</h1>
+        <h1>Laura M. Folk</h1>
     </header>
-    <!-- <div id="menu" aria-label="menu"></div> -->
+    <div id="menu"></div>
     <nav class="nav">
         <a id="home" href='#' class="active">Home</a>
         <a id="chamber" href='chamber/'>Chamber</a>
@@ -54,7 +54,7 @@
                 <button id="wdd" onclick="filterCourses('WDD')">WDD</button>
                 <button id="cse" onclick="filterCourses('CSE')">CSE</button>
             </div>
-            <div class="con">
+            <div class="course-con">
                 <div class="course CSE" style="display: block;">CSE 110</div>
                 <div class="course WDD" style="display: block;">WDD 130</div>
                 <div class="course CSE" style="display: block;">CSE 111</div>
@@ -67,7 +67,7 @@
     </main>
     <footer>
         <p>&copy; <span id="currentYear">2024</span> Laura M. Folk | United States</p>
-        <p>This was Last Modified on: <span id="lastModified"></span></p>
+        <p><span id="lastModified"></span></p>
         
     </footer>
 </body>

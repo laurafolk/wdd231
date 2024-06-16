@@ -10,6 +10,10 @@
         flex: 1;
     }
 
+    #menu {
+        display: none;
+    }
+
     main {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
