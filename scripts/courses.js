@@ -9,7 +9,7 @@ const hamButton = document.querySelector('#menu');
 const nav = document.querySelector('.nav');
 
 hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
+	nav.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
 const courses = [
