@@ -1,7 +1,7 @@
 //Below is for selecting the menu buttons
-const homeButton = document.querySelector('#home-button');
-const chamberButton = document.querySelector('github-button');
-const githubButton = document.querySelector('linkedin-button');
+// const homeButton = document.querySelector('#home-button');
+// const chamberButton = document.querySelector('github-button');
+// const githubButton = document.querySelector('linkedin-button');
 
 
 //Below is for the hamburgerButton
@@ -12,6 +12,7 @@ hamButton.addEventListener('click', () => {
 	nav.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
 const courses = [
     {
         subject: 'CSE',
