@@ -62,7 +62,7 @@ nav a:hover {
 }
 
 nav a {
-    display: block;
+    display: none;
     color: #F6F8FF;
     text-decoration: none;
     text-align: center;
