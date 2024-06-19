@@ -1,9 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+header {
+    display: grid;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Charm';
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+    padding: 16px;
+}
+
+.card h2 {
+    font-family: 'Charm', pt sans;
+    font-size: 1rem;
+}
+
 .card {
-    border: 1px solid #ccc;
+    border: 2px solid #93A3B1;
     padding: 16px;
     margin: 16px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #BFDBF7;
+    box-shadow: 10px 10px 20px #93A3B1;
   }
   
   .card img {
@@ -11,5 +41,41 @@
     height: auto;
     display: block;
     margin-bottom: 16px;
+    border-radius: 10px;
+  }
+
+  footer {
+    display: grid;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Charm';
   }
   
+  /*Mobile View */
+  @media (max-width: 640px) {
+    #cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 12px;
+        margin: 12px;
+        border-radius: 6px;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+    }
+
+    .card img {
+        max-width: 80%;
+    }
+  }
+
+    /* .card {
+        align-items: center;
+        text-align: center;
+    } */
+
