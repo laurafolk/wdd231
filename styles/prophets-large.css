@@ -1,0 +1,46 @@
+
+header {
+    display: grid;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Charm';
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+    padding: 16px;
+}
+
+.card h2 {
+    font-family: 'Charm';
+    font-size: 1rem;
+}
+
+.card {
+    border: 2px solid #93A3B1;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    background-color: #BFDBF7;
+    box-shadow: 10px 10px 20px #93A3B1;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 16px;
+    border-radius: 10px;
+  }
+
+  footer {
+    display: grid;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Charm';
+  }
