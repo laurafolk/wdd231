@@ -23,6 +23,26 @@
         flex: 1;
     }
 
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .card {
+        border: 1px solid #ccc;
+        padding: 16px;
+        margin: 16px;
+        width: calc(33.333% - 32px);
+      }
+      .list .card {
+        width: calc(100% - 32px);
+      }
+      .grid .card {
+        width: calc(33.333% - 32px);
+      }
+      .toggle-button {
+        margin: 16px;
+      }
+
     footer {
         /* background-color: #53599A; */
         width: 100%;
@@ -33,7 +53,5 @@
         background-color: #4ECDC4;
         color: #060505;
     }
-
-
 }
 

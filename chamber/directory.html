@@ -14,7 +14,7 @@
     <meta property="og:url" content="https://www.facebook.com/laura.m.folk/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stlyes/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -26,32 +26,25 @@
 
 <body>
     <header>
-        <img class="logo" src="put header logo here" alt="discripetion of logo here">
+        <!-- <img class="logo" src="put header logo here" alt="discripetion of logo here"> -->
         <h1>Oakville Chamber of Commerce</h1>
 
+        <button id="menuButton">&#9776;</button>
         <nav>
-            <button id="menuButton">&#9776;</button>
+            <!-- <button id="menuButton">&#9776;</button> -->
             <ul class="menuLinks">
                 <li><a href="#" title="Home">Home</a></li>
-                <li <a href="#" class="current-menu-item">Directory</a></li>
+                <li><a href="#" class="current-menu-item">Directory</a></li>
                 <li><a href="#" title="Join">Join</a></li>
                 <li><a href="#" title="Discover">Discover</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="card" id="hero-image">
-            <h2></h2>
-            <ul>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-            </ul>
-        </section>
+        <button class="toggle-button">Toggle View</button>
+        <div class="container grid" id="member-container"></div>
+        <div class="card"></div>
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> Laura M. Folk | United States</p>

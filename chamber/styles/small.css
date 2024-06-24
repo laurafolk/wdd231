@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
     font-family: 'Roboto', Times, serif;
@@ -17,8 +16,9 @@ header {
 }
 
 nav {
-    background-color: #154e13;
+    background-color:#4ECDC4;
 }
+
 #menuButton::before {
     content: "☰";
 }
@@ -31,7 +31,7 @@ nav {
     cursor: pointer;
     width: 100%;
     text-align: left;
-    padding: .25rem, 2vw;
+    padding: .25rem;
 }
 
 ul.nenuLinks li a {
@@ -42,7 +42,7 @@ ul.nenuLinks li a {
 }
 
 li.current-menu-item a {
-    background-color: rgba(0,0,0,0,2);
+    background-color: #fff;
 }
 
 ul.menuLinks {

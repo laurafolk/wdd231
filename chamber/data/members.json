@@ -1,0 +1,74 @@
+[
+    {
+      "name": "Inizio Counseling Center, LLC",
+      "address": "10805 Sunset Office Dr",
+      "suite": "Suite L108",
+      "city": "Saint Louis",
+      "state": "MO",
+      "zip": "63127",
+      "phone": "314-909-4804",
+      "website": "https://www.iniziocounseling.com",
+      "membership": 3
+    },
+    {
+      "name": "MaryAnn Bradley Health and Life Coach",
+      "address": "No physical Addresss",
+      "city": "New York",
+      "state": "NY",
+      "phone": "555-5678",
+      "website": "https://bam-coaching.mailchimpsites.com",
+      "membership": 2
+    },
+    {
+      "name": "Agape Yoga Studio",
+      "address": "5445 Telegraph Rd",
+      "suite": "Suite 117",
+      "city": "St. Louis",
+      "state": "MO",
+      "zip": "63129",
+      "phone": "(314) 846-6000",
+      "website": "https://www.oakvillemo.com/agapeyoga",
+      "membership": 3
+    },
+    {
+      "name": "Café Fleur De Lis",
+      "address": "5569 Telegraph Rd",
+      "city": "Saint Louis",
+      "state": "MO",
+      "zip": "63129",
+      "phone": "(314) 200-8158",
+      "website": "https://www.facebook.com/p/Caf%C3%A9-Fleur-De-Lis",
+      "membership": 1
+    },
+    {
+      "name": "Kim Brady Photography",
+      "address": "5681 Chalet Forest Court",
+      "city": "Saint Louis",
+      "state": "MO",
+      "zip": "63129",
+      "phone": "(314) 422-8540",
+      "website": "https://kimbradyphotography.com",
+      "membership": 2
+    },
+    {
+      "name": "Archer Law Firm LLC",
+      "address": "4500 Telegraph Rd",
+      "suite": "Ste 106",
+      "city": "Saint Louis",
+      "state": "MO",
+      "zip": "63129",
+      "phone": "(314) 200-6664",
+      "website": "https://archerlawfirm.com ",
+      "membership": 3
+    },
+    {
+      "name": "X-Golf South County",
+      "address": "4476 Lemay Ferry Rd",
+      "city": "Saint Louis",
+      "state": "MO",
+      "phone": "(314) 984-7204",
+      "website": "https://www.stlcc.edu",
+      "membership": 1
+    }
+  ]
+  
