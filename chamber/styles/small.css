@@ -7,38 +7,43 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
     font-family: 'Roboto';
     font-size: 1rem;
-    background-color: #4ECDC4;
+    background-color: #91C499;
     color: #060505;
     padding: 1rem;
 }
 
 nav {
-    background-color:#4ECDC4;
+    background-color:#91C499;
 }
 
 #menuButton::before {
-    content: "☰";
+    content: "\2630";
 }
 
-#myButton {
+#menuButton {
+    display: block;
     font-size: 2rem;
     background: none;
     border: none;
-    color: #fff;
+    color: #060505;
     cursor: pointer;
     width: 100%;
     text-align: left;
     padding: .25rem;
 }
 
-ul.nenuLinks li a {
-    display: block;
-    padding: .75rem 2vw;
-    color: #fff;
-    text-decoration: none;
+ul.menuLinks li a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    color: #060505;
+    justify-content: space-around;
+    /* text-decoration: none; */
 }
 
 li.current-menu-item a {
@@ -46,15 +51,25 @@ li.current-menu-item a {
 }
 
 ul.menuLinks {
-    display: block;
+    display: flex;
 }
 
-#menuButon.open::before {
+#menuButton.open::before {
     content: "X";
 }
 
 ul.menuLinks.open {
-    display: block;
+    display: flex;
+}
+
+.card {
+    border: 2px solid #060505;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    background-color: #FFFCE8;
+    box-shadow: 10px 10px 20px ;
+    /* width: calc(33.333% - 32px); */
 }
 
 footer {
@@ -64,6 +79,6 @@ footer {
     font-size: 1.5rem;
     text-align: center;
     font-family: 'Roboto';
-    background-color: #6B4E71;
-    color: #F6F8FF;
+    background-color: #91C499;
+    color: #060505;
 }
