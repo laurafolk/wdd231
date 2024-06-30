@@ -8,7 +8,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     font-family: 'Roboto';
     font-size: 1rem;
     background-color: #91C499;
@@ -25,7 +25,7 @@ nav {
 }
 
 #menuButton {
-    display: block;
+    /* display: block; */
     font-size: 2rem;
     background: none;
     border: none;
@@ -37,13 +37,14 @@ nav {
 }
 
 ul.menuLinks li a {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    display: block;
+    /* flex-direction: column; */
     width: 100%;
     padding: 1rem;
     color: #060505;
-    justify-content: space-around;
-    /* text-decoration: none; */
+    /* justify-content: space-around; */
+    text-decoration: none;
 }
 
 li.current-menu-item a {

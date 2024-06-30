@@ -1,15 +1,22 @@
-const hamburgerElement = document.querySelector('#menuButton');
-const navElement = document.querySelector('.menuLinks');
+// const hamburgerElement = document.querySelector('#menuButton');
+// const navElement = document.querySelector('.menuLinks');
 
-hamburgerElement.addEventListener('click', () => {
-    navElement.classList.toggle('open');
-    // hamburgerElement.classList.toggle('open');
-});
+// hamburgerElement.addEventListener('click', () => {
+//     navElement.classList.toggle('open');
+//     hamburgerElement.classList.toggle('open');
+// });
 
 document.addEventListener('DOMContentLoaded', async () => {
+    const hamburgerElement = document.querySelector('#menuButton');
+    const navElement = document.querySelector('.menuLinks');
     const container = document.getElementById('member-container');
     const toggleButton = document.querySelector('.toggle-button');
     let isGridView = true;
+
+    hamburgerElement.addEventListener('click', () => {
+        navElement.classList.toggle('open');
+        hamburgerElement.classList.toggle('open');
+    });
 
     async function fetchMembers() {
         const response = await fetch('data/members.json');

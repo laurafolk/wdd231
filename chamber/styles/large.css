@@ -3,8 +3,9 @@
     header {
         width: 100%;
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content:space-between;
         font-family: 'Roboto';
         font-size: 1rem;
         background-color: #91C499;
@@ -55,7 +56,6 @@
     }
 
     .grid .card {
-
       width: calc(33% - 32px);
     }
     
