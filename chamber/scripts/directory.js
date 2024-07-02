@@ -8,7 +8,7 @@
 
 document.addEventListener('DOMContentLoaded', async () => {
     const hamburgerElement = document.querySelector('#menuButton');
-    const navElement = document.querySelector('.menuLinks');
+    const navElement = document.querySelector('nav');
     const container = document.getElementById('member-container');
     const toggleButton = document.querySelector('.toggle-button');
     let isGridView = true;

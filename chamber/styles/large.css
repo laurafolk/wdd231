@@ -49,6 +49,12 @@
         /* width: calc(33.333% - 32px); */
     }
 
+    .toggle-button {
+        padding: 0.5rem 1rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+    
     .list .card {
         display: grid;
         grid-template-columns: auto;
@@ -59,9 +65,9 @@
       width: calc(33% - 32px);
     }
     
-    .toggle-button {
+    /* .toggle-button {
         margin: 16px;
-    }
+    } */
 
     footer {
         display: grid;
