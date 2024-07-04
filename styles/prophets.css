@@ -2,7 +2,6 @@
   @media (max-width: 640px) {
     #cards {
         display: flex;
-        flex-direction: auto;
     }
 
     .card {
