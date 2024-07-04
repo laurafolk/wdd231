@@ -13,6 +13,13 @@
         padding: 1rem;
     }
 
+    ul.menuLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1rem;
+    }
+
     #menuButton {
       display: none;
     }
@@ -34,9 +41,10 @@
       grid-template-columns: auto;
     }
 
-    .container {
-        display: flex;
-        flex-wrap: wrap;
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
       }
 
     .card {
@@ -50,6 +58,7 @@
     }
 
     .toggle-button {
+        display: block;
         padding: 0.5rem 1rem;
         margin-bottom: 1rem;
         cursor: pointer;
@@ -58,11 +67,11 @@
     .list .card {
         display: grid;
         grid-template-columns: auto;
-        width: calc(100% - 32px);
+        width: calc(100% - 22px);
     }
 
     .grid .card {
-      width: calc(33% - 32px);
+      width: calc(33% - 22px);
     }
     
     /* .toggle-button {

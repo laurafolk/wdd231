@@ -5,12 +5,12 @@ body {
 
 /* Header styles */
 header {
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     align-items: center;
     /* flex-direction: column; */
-    justify-content: space-between;
-    /* justify-content: space-evenly; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
     font-family: 'Roboto';
     font-size: 1rem;
     background-color: #91C499;
@@ -22,10 +22,17 @@ header h1 {
     font-size: 2rem;
 }
 
+#menuButton::before {
+    content: "\2630";
+    font-size: 40px;
+}
+
+#menuButton.open::before {
+    content: "X";
+}
+
 /* Menu button styles */
 #menuButton {
-    display: block;
-    /* display: inline-block; */
     font-size: 1.5rem;
     background: none;
     border: none;
@@ -39,11 +46,6 @@ header h1 {
     padding: .25rem; */
 }
 
-#menuButton::before {
-    content: "\2630";
-}
-
-/* Navigation styles for smaller screens */
 nav {
     display: none;
     flex-direction: column;
@@ -53,6 +55,11 @@ nav {
 
 nav.open {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #FFFCE8;
+    justify-content: space-around;
+    padding: 1rem;
 }
 
 nav ul {
@@ -69,26 +76,32 @@ nav a {
     display: block;
 }
 
-nav a:hover, nav .current-menu-item {
-    background: #fff;
-    /* color: #fff; */
-    border-radius: 4px;
+ul.menuLinks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1rem;
 }
+
+/* nav a:hover, nav .current-menu-item {
+    background: #fff;
+    border-radius: 4px;
+} */
 
 /* Main content styes */
 main {
-    padding: 2rem;
+    max-width: 80%;
+    max-height: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
 }
 
-/* .toggle-button {
-    padding: 0.5rem 1rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-} */
-
-/* #menuButton::before {
-    content: "\2630";
-} */
+.toggle-button {
+    display: none;
+}
 
 ul.menuLinks li a {
     display: flex;
@@ -105,23 +118,20 @@ ul.menuLinks li a {
     background-color: #fff;
 } */
 
-ul.menuLinks {
+/* ul.menuLinks {
     flex-direction: column;
-}
+} */
 
-#menuButton.open::before {
-    content: "X";
-}
 
 /* ul.menuLinks.open {
     display: flex;
 } */
 
 /* Container styles */
-.container.grid {
+#member-grid, .container-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+    gap: 20px;
 }
 
 /* Member card styles */
