@@ -1,0 +1,180 @@
+/* Base styles for the body */
+body {
+    font-family: 'Roboto', Times, sans-serif;
+}
+
+/* Styles for the header */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    background: #91C499;
+    color: #060505;
+    padding: 2rem;
+    /* position: relative; */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#menuButton::before {
+    content: "\2630";
+    font-size: 40px;
+}
+
+#menuButton.open::before {
+    content: "X";
+}
+
+#menuButton {
+    /* position: absolute; */
+    width: 100%;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #060505;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #91C499;
+}
+
+nav a {
+    color: #91C499;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: #060505;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header nav ul li a.current-menu-item {
+    text-decoration: underline;
+}
+
+/* Styles for main content */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.call-to-action {
+    text-align: center;
+}
+
+.call-to-action a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #91C499;
+    color: #060505;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.call-to-action a:hover {
+    background: olive;
+}
+
+.events, .weather, .company-spotlights {
+    padding: 20px;
+    background-color: #FFFCE8;
+    border: 1px solid #060505;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px;
+    /* margin: 2rem 0; */
+}
+
+.container.grid .member-card {
+    display: flex;
+    flex-direction: column;
+    background: #FFFCE8;
+    padding: 1rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#member-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.member-card {
+    padding: 20px;
+    background-color: #FFFCE8;
+    border: 1px solid #060505;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px;
+}
+
+.weather p {
+    font-size: 1.2rem;
+}
+
+.weather figure {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.weather img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Styles for the footer */
+footer {
+    background-color: #91C499;
+    color: #060505;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 700;
+}

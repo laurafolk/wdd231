@@ -10,17 +10,22 @@
     <meta property="og:title" content="WDD231 - Laura M. Folk - Chamber Home Page">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Laura M. Folk - WDD231 - Chamber Home Page">
-    <meta property="og:image" content="images/saint-louis-temple.webp">
+    <meta property="og:image" content="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-louis-missouri/400x250/st-louis-temple-lds-903353-wallpaper.jpg">
     <meta property="og:url" content="https://laurafolk.github.io/wdd231/chamber/index.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <!-- <link rel="stylesheet" href="styles/base.css"> -->
+    <link rel="stylesheet" href="styles/home-base.css">
+    <!-- <link rel="stylesheet" href="styles/large.css"> -->
+    <link rel="stylesheet" href="styles/home-large.css">
     <link rel="icon" href="favicon.ico/favicon.ico">
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/randomMembers.js" defer></script>
 </head>
 
 <body>
@@ -33,14 +38,43 @@
                 <li><a href="index.html" title="Home">Home</a></li>
                 <li><a href="directory.html" class="current-menu-item">Directory</a></li>
                 <li><a href="#" title="Join">Join</a></li>
-                <li><a href="#" title="Discover">Discover</a></li>
+                <li><a href="#" title="Events">Events</a></li>
             </ul>
         </nav>
     </header>
 
 <main>
-        <button class="toggle-button" onclick="toggleview()">Toggle View</button>
-        <div class="container grid" id="member-container"></div>
+        <!-- <button class="toggle-button" onclick="toggleview()">Toggle View</button> -->
+        <!-- <div class="container grid" id="member-container"></div> -->
+        <section class="hero">
+            <img src="images/hero.webp" alt="Hero Image" class="responsive">
+        </section>
+        <section class="call-to-action">
+            <a href="join.html">Join the Chamber of Commerce</a>
+        </section>
+        <section class="events">
+            <h2>Current Events</h2>
+            <!-- Events content here -->
+        </section>
+        <section class="weather">
+            <p>The current temperature in Oakville, MO. is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="https://openweathermap.org/img/wn/.png" alt="Current weather icon">
+                <figcaption id="weather-description"></figcaption>
+            </figure>
+            <div id="forecast">
+                <!-- Forecast will be dynamically added here -->
+            </div>
+        </section>
+        <section class="company-spotlights">
+            <h2>Company Spotlights</h2>
+            <div id="spotlights-container"></div>
+        </section>
+        <div class="container grid" id="member-container">
+            <div class="member-card">Member 1</div>
+            <div class="member-card">Member 2</div>
+            <div class="member-card">Member 3</div>
+        </div>
 </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> Laura M. Folk | United States</p>
