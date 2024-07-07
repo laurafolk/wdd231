@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Membership Join Page</title>
+    <meta name="description" content="Laura M. Folk - WDD231 - Chamber Membership Join Page">
+    <meta name="author" content="Laura M. Folk">
+    <meta property="og:title" content="WDD231 - Laura M. Folk - Chamber Membership Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Laura M. Folk - WDD231 - Chamber Membership Join Page">
+    <meta property="og:image" content="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-louis-missouri/400x250/st-louis-temple-lds-903353-wallpaper.jpg">
+    <meta property="og:url" content="https://laurafolk.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <!-- <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css"> -->
+    <!-- <link rel="icon" href="favicon.ico/favicon.ico"> -->
+    <!-- <script src="scripts/directory.js" defer></script> -->
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- <img class="logo" src="put header logo here" alt="discripetion of logo here"> -->
+        <h1>Chamber Membership Join Page</h1>
+        <!-- <button id="menuButton"></button> -->
+        <button id="menuButton" class="hamburger" title="Menu Button" onclick="toggleMenu()">☰</button> 
+        <nav>
+            <ul class="menuLinks">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="directory.html" title="Directory">Directory</a></li>
+                <li><a href="join.html" class="current-menu-item" title="Join">Join</a></li>
+                <li><a href="events.html" title="Events">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form method="get" action="thankyou.html">
+            <label for="first-name">First Name <span class="required">*</span> <span class="required-text">Required</span>
+                <input type="text" id="first-name" name="first-name" title="First Name" autocomplete="given-name" required>
+            </label>
+            <label for="last-name">Last Name <span class="required">*</span> <span class="required-text">Required</span>
+                <input type="text" id="last-name" name="last-name" title="Last Name" autocomplete="family-name" required>
+            </label>
+            <label for="organization-title">Organizational Title
+                <input type="text" id="organization-title" name="organization-title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z-\s]{7,}">
+            </label>
+            <label for="email">Email <span class="required">*</span> <span class="required-text">Required</span>
+                <input type="email" id="email" name="email" title="Email Address" autocomplete="email" placeholder="example@mail.com" required>
+            </label>
+            <label for="phone">Mobile Phone <span class="required">*</span> <span class="required-text">Required</span>
+                <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+            </label>
+            <label for="organization">Organization Name <span class="required">*</span> <span class="required-text">Required</span>
+                <input type="text" id="organization" name="organization" title="Organization Name" autocomplete="organization" required>
+            </label>
+            <label for="membership-level">Membership Level
+                <select id="membership-level" name="membership-level" title="Membership Level" required>
+                    <option value="np">NP Membership (Non-profit)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+                <button type="button" onclick="openModal()">Learn More</button>
+            </label>
+            <label for="description">Organization Description
+                <textarea id="description" name="description" title="Organization Description"></textarea>
+            </label>
+            <input type="hidden" id="timestamp" name="timestamp">
+            <input type="submit" value="Submit Application">
+        </form>
+    </main>
+
+    <div id="membershipModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Membership Benefits</h2>
+            <p><strong>NP Membership:</strong> No fee, access to events.</p>
+            <p><strong>Bronze Membership:</strong> Fee, access to events, basic training.</p>
+            <p><strong>Silver Membership:</strong> Higher fee, access to events, advanced training, advertising opportunities.</p>
+            <p><strong>Gold Membership:</strong> Highest fee, access to events, premium training, extensive advertising opportunities, spotlight positions.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Laura M. Folk | United States</p>
+        <p>This information is being used soley for BYU-I WDD231 Frontend Development Class</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
