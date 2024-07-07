@@ -65,13 +65,16 @@
             </label>
             <label for="membership-level">Membership Level
                 <select id="membership-level" name="membership-level" title="Membership Level" required>
+                    <!-- add the below to try and fix a error -->
+                    <option value="" disabled selected>Select a membership level</option>   
                     <option value="np">NP Membership (Non-profit)</option>
                     <option value="bronze">Bronze Membership</option>
                     <option value="silver">Silver Membership</option>
                     <option value="gold">Gold Membership</option>
                 </select>
-                <button type="button" onclick="openModal()">Learn More</button>
+                <!-- <button type="button" onclick="openModal()">Learn More</button> -->
             </label>
+            <button type="button" onclick="openModal()">Learn More</button>
             <label for="description">Organization Description
                 <textarea id="description" name="description" title="Organization Description"></textarea>
             </label>
