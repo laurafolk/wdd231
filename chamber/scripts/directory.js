@@ -1,10 +1,3 @@
-// const hamburgerElement = document.querySelector('#menuButton');
-// const navElement = document.querySelector('.menuLinks');
-
-// hamburgerElement.addEventListener('click', () => {
-//     navElement.classList.toggle('open');
-//     hamburgerElement.classList.toggle('open');
-// });
 
 document.addEventListener('DOMContentLoaded', async () => {
     const hamburgerElement = document.querySelector('#menuButton');
@@ -26,7 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function createMemberCard(member) {
         const card = document.createElement('div');
-        card.className = 'card';
+        card.className = 'card member-card';
         card.innerHTML = `
             <h3>${member.name}</h3>
             <p>Address: ${member.address}${member.suite ? ', ' + member.suite : ''}</p>
@@ -46,6 +39,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             const card = createMemberCard(member);
             container.appendChild(card);
         });
+
+        shuffleAndDisplayThreeRandomCards();
     }
 
     toggleButton.addEventListener('click', () => {
@@ -79,3 +74,4 @@ document.addEventListener('DOMContentLoaded', () => {
                 memberContainer.appendChild(card);
             });
         });
+        

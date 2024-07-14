@@ -105,8 +105,9 @@
     }
 
     .company-spotlights {
-        flex: 0 0 100%;
+        /* flex: 0 0 100%; */
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         gap: 1rem;
         margin-top: 1rem;

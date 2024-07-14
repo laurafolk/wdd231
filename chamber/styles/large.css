@@ -1,11 +1,18 @@
 @media screen and (min-width: 640px) {
-
+    /* added the body part to try and fix the toggle between grid and list. */
+    /* body {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        background-color: azure;
+    } */
+    
     header {
         width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content:space-between;
+        justify-content:space-evenly;
         font-family: 'Roboto';
         font-size: 1rem;
         background-color: #91C499;
@@ -16,7 +23,7 @@
     ul.menuLinks {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         padding: 1rem;
     }
 
@@ -28,6 +35,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        /* justify-content: space-evenly; */
     }
 
     nav a {
@@ -41,11 +49,33 @@
       grid-template-rows: auto;
       grid-template-columns: auto;
     }
+    /* added the below for the grid/list buttons */
+    /* .comtainer {
+        width: 90vw;
+        max-width: 800px;
+        margin: 50px auto;
+    } */
+    
+    
+    /* .btn {
+        height: 55px;
+        background-color: #9C7CA5;
+        color: white;
+        padding: 10px 20px;
+        margin-right: 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 22px;
+        font-weight: 500;
+        font-family: 'Roboto';
+        box-shadow: 3px 10px 20px 0px #534B62;
+    } */
 
     .container-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
+        /* grid-template-rows: repeat(3, 1fr); */
       }
 
     .card {
@@ -74,13 +104,10 @@
     .grid .card {
       width: calc(33% - 22px);
     }
-    
-    /* .toggle-button {
-        margin: 16px;
-    } */
 
     footer {
-        display: grid;
+        width: 100%;
+        display: flex;
         font-size: 1rem;
         text-align: center;
         font-weight: bold;

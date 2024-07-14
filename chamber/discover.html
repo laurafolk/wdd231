@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico/favicon.ico">
-    <!-- <script src="scripts/directory.js" defer></script> -->
+    <script src="scripts/directory.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 
 </head>
@@ -27,39 +27,71 @@
 <body>
     <header>
         <!-- <img class="logo" src="put header logo here" alt="discripetion of logo here"> -->
-        <h1>Oakville, MO.  Chamber of Commerce - Directory Page</h1>
+        <h1>Oakville, MO.  Chamber of Commerce - Discover Page</h1>
         <button id="menuButton"></button>
         <nav>
             <ul class="menuLinks">
                 <li><a href="index.html" title="Home">Home</a></li>
-                <li><a href="directory.html" class="current-menu-item">Directory</a></li>
+                <li><a href="directory.html" title="Directory">Directory</a></li>
                 <li><a href="join.html" title="Join">Join</a></li>
-                <li><a href="discover.html" title="Discover">Discover</a></li>
+                <li><a href="discover.html" class="current-menu-item" title="Discover">Discover</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <button class="toggle-button" onclick="toggleview()">Toggle View</button>
-        <!-- added the below div class container and buttons to try and fix the toggle between grid and list -->
-        <!-- <div class="container">
-            <div class="buttons">
-                <button class="btn" id="gridBtn">Grid</button>
-                <button class="btn" id="listBtn">List</button>
-                <div class="card"></div>
-                <div class="container-grid" id="member-container"></div>
+    <div class="content-wrapper">
+        <aside class="sidebar">
+            <div id="visitor-message"></div>
+            <div class="events">
+                <h2>Upcoming Events</h2>
+                <!-- Event details -->
             </div>
-        </div> -->
-        <!-- <div class="card"></div> -->
-        <div class="container-grid" id="member-container"></div>
-        <div class="card"></div>
-    </main>
+            <div class="attractions">
+                <h2>Local Attractions</h2>
+                <!-- Attractions details -->
+            </div>
+            <div class="calendar">
+                <h2>Calendar</h2>
+                <!-- Calendar details -->
+            </div>
+        </aside>
+
+        <main class="gallery">
+            <div class="container-grid">
+                <div class="card">
+                    <img src="image1.jpg" alt="Description 1" loading="lazy">
+                    <p>Caption 1</p>
+                </div>
+                <div class="card">
+                    <img src="image2.jpg" alt="Description 2" loading="lazy">
+                    <p>Caption 2</p>
+                </div>
+                <div class="card">
+                    <img src="image3.jpg" alt="Description 3" loading="lazy">
+                    <p>Caption 3</p>
+                </div>
+                <div class="card">
+                    <img src="image4.jpg" alt="Description 4" loading="lazy">
+                    <p>Caption 4</p>
+                </div>
+                <div class="card">
+                    <img src="image5.jpg" alt="Description 5" loading="lazy">
+                    <p>Caption 5</p>
+                </div>
+                <div class="card">
+                    <img src="image6.jpg" alt="Description 6" loading="lazy">
+                    <p>Caption 6</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
     <footer>
         <p>&copy; <span id="currentYear"></span> Laura M. Folk | United States</p>
         <p>This information is being used soley for BYU-I WDD231 Frontend Development Class</p>
         <p><span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/directory.js"></script>
+
 </body>
 
 </html>

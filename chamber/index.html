@@ -16,29 +16,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <!-- <link rel="stylesheet" href="styles/base.css"> -->
     <link rel="stylesheet" href="styles/home-base.css">
-    <!-- <link rel="stylesheet" href="styles/large.css"> -->
     <link rel="stylesheet" href="styles/home-large.css">
     <link rel="icon" href="favicon.ico/favicon.ico">
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/spotlights.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
+    <!-- <script src="scripts/directory.js" defer></script> -->
     <script src="scripts/randomMembers.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
         <!-- <img class="logo" src="put header logo here" alt="discripetion of logo here"> -->
-        <h1>Oakville Chamber of Commerce - Home Page</h1>
+        <h1>Chamber of Commerce - Home Page</h1>
         <button id="menuButton"></button>
         <nav>
             <ul class="menuLinks">
-                <li><a href="index.html" title="Home">Home</a></li>
-                <li><a href="directory.html" class="current-menu-item">Directory</a></li>
-                <li><a href="#" title="Join">Join</a></li>
-                <li><a href="#" title="Events">Events</a></li>
+                <li><a href="index.html" class="current-menu-item" title="Home">Home</a></li>
+                <li><a href="directory.html" title="Directory">Directory</a></li>
+                <li><a href="join.html" title="Join">Join</a></li>
+                <li><a href="discover.html" title="Discover">Discover</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +45,7 @@
         <!-- <button class="toggle-button" onclick="toggleview()">Toggle View</button> -->
         <!-- <div class="container grid" id="member-container"></div> -->
         <section class="hero">
-            <img src="images/hero.webp" alt="Hero Image" class="responsive">
+            <img src="images/cliff-cave-park2.webp" alt="Hero Image" class="responsive">
         </section>
         <section class="call-to-action">
             <a href="join.html">Join the Chamber of Commerce</a>
@@ -68,7 +66,7 @@
         </section>
         <section class="company-spotlights">
             <h2>Company Spotlights</h2>
-            <div id="spotlights-container"></div>
+            <div id="spotlights-container" class="spotlights-grid"></div>
         </section>
         <div class="container grid" id="member-container">
             <div class="member-card">Member 1</div>
@@ -81,6 +79,7 @@
         <p>This information is being used soley for BYU-I WDD231 Frontend Development Class</p>
         <p><span id="lastModified"></span></p>
     </footer>
+    
 </body>
 
 </html>
