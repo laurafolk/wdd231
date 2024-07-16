@@ -57,7 +57,7 @@ nav.open {
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: none;
+    /* background-color: none; */
     justify-content: space-around;
     padding: 1rem;
 }
