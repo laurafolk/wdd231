@@ -3,8 +3,7 @@
 :root {
   --primary-color: #4F345A;
   --secondary-color: #5D4E6D;
-  --accent1-color: #ADFC92;
-  --accent2-color: #8FA998;
+  --accent1-color: #8FA998;
 
 
   --heading-font: 'Caveat';
@@ -16,7 +15,7 @@
   --paragraph-color-on-white: #5D4E6D; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: #8FA998;
-  --nav-link-color: #C9F299;
+  --nav-link-color: #4F345A;
   --nav-background-color: #8FA998;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #5D4E6D;
