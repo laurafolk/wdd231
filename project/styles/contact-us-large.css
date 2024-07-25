@@ -1,0 +1,122 @@
+@media screen and (min-width: 640px) {
+    body {
+        background-color: #D6D5B3;
+        font-family: 'oregano', 'georgia', 'serif';
+        font-size: 22px;
+        margin: 0;
+        padding: 0; 
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #8FA998;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #4F345A;
+        text-align: center;
+        padding: 35px;
+        font-size: 2em;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        justify-content: center;
+        padding-right: 2rem;
+    }
+
+    nav a:hover {
+        background-color: #4F345A;
+        color: #8FA998;
+        border-radius: 20px;
+    }
+    
+    .main-img img {
+        width: 100%;
+        max-width: 400px;
+        margin: 1rem;
+        /* transition: transform 0.3s; */
+    }
+    .contactus-grid {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        gap: 2rem;
+        padding-top: 2rem;
+        padding-left: 10%;
+        padding-right: 10%;
+        /* padding: 2rem; */
+    }
+    
+    .contactus-grid img {
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 2px solid #4F345A;
+        border-radius: 10px;
+        border-width: 1.5rem;
+        box-shadow: 10px 10px 20px;
+        width: 100%;
+        /* max-width: 400px; */
+        /* align-self: center; */
+        /* justify-self: center; */
+    }
+    
+    .contactus-grid form ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .contactus-grid form ul li {
+        margin-bottom: 1rem;
+    }
+    
+    .contactus-grid form ul li label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    
+    .contactus-grid form ul li input,
+    .contactus-grid form ul li textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #4F345A;
+        border-radius: 10px;
+        border-width: 2.5px;
+    }
+    
+    .contactus-grid form ul li button {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #4F345A;
+        color: #8FA998;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .contactus-grid form ul li button:hover {
+        background-color: #8FA998;
+    }
+
+    footer {
+        background-color: #8FA998;
+        color: #4F345A;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+        text-align: center;
+        font-family: 'Oregano';
+        font-weight: 700;
+    }
+}

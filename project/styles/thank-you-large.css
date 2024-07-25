@@ -1,0 +1,31 @@
+@media screen and (min-width: 640px) {
+    body {
+        background-color: #D6D5B3;
+        font-family: 'oregano', 'georgia', 'serif';
+        font-size: 22px;
+        margin: 0;
+        padding: 0; 
+    }
+    
+    header {
+        text-align: center;
+        padding: 1rem;
+        background-color: #8FA998;
+        color: #4F345A;
+    }
+
+    main h2 {
+        color: #4F345A;
+    }
+
+    footer {
+        background-color: #8FA998;
+        color: #4F345A;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+        text-align: center;
+        font-family: 'Oregano';
+        font-weight: 700;
+    }
+}

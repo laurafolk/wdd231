@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 Final Project: Laura's Creative Corner</title>
+    <title>Home Page</title>
     <meta name="description" content="WDD 231 | Final Project | Laura's Creative Corner | Laura M. Folk">
     <meta name="author" content="Laura M. Folk">
     <meta property="og:title" content="WDD231 - Laura M. Folk - Laura's Creative Corner Home Page">
@@ -16,8 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/home-base.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="icon" href="favicon.ico/favicon.ico">
     <script src="scripts/lrscc.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
@@ -27,12 +28,18 @@
         <a id="logo-link">
             <img class="logo" src="images/creative-corner.webp" alt="Laura's Creative Corner Logo" aria-label="Laura's Creative Corner Logo">
         </a>
-        <div id="menu"></div>
+        <!-- <div id="menu"></div>
+        <button id="menuButton"></button> -->
         <nav>
+            <!-- <ul class="menuLinks">
+                <li><a id="home" href="lrscc-home.html" class="current-menu-item" title="Home">Home</a></li>
+                <li><a id="company-blog" href="lrscc-company-blog.html">Company Blog</a></li>
+                <li><a id="contact-us" href="lrscc-contact-us.html">Contact Us</a></li>
+            </ul> -->
             <a id="home" href="lrscc-home.html" class="current-menu-item" title="Home">Home</a>
             <a id="company-blog" href="lrscc-company-blog.html">Company Blog</a>
             <a id="contact-us" href="lrscc-contact-us.html">Contact Us</a>
-            <!-- <a id="siteplan" href="siteplan.html">Site Plan</a> -->
+            <a id="siteplan" href="siteplan.html">Site Plan</a>
         </nav>
         <!-- <a href="lrscc-home.html" class="current-menu-item" title="Home">Home</a>
             <a href="lrscc-company-blog.html">Company Blog</a>
@@ -52,8 +59,6 @@
                 <img src="images/sock-snowmen1.webp" width="400" height="300" alt="snowmen" aria-label="Misc.">
                 <h2>Misc.</h2>
         </div>
-        <div id="json-data"></div>
-        <div id="last-visit-message"></div>
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> Laura M. Folk | United States</p>
