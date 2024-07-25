@@ -1,39 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Fetch JSON data
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            displayData(data);
-            storeLastVisit();
+    const navigation = document.querySelector('nav');
+    const page = document.querySelector('main');
+    const heading = document.querySelector('#header-title');
+    const feedbackElement = document.getElementById('feedback');
+    const formElement = document.forms[0];
+    
+
+    if (formElement) {
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.style.display = "block";
+            document.body.classList.toggle('moveDown');
         });
-
-    function displayData(data) {
-        const container = document.getElementById('json-data');
-        container.innerHTML = data.map(item => `
-            <div class="card">
-                <h2>${item.name}</h2>
-                <p>${item.description}</p>
-                <p>${item.date}</p>
-                <img src="${item.image}" alt="${item.name}">
-            </div>
-        `).join('');
-    }
-
-    function storeLastVisit() {
-        const lastVisitKey = 'lastVisit';
-        const lastVisit = localStorage.getItem(lastVisitKey);
-        const now = new Date();
-
-        if (lastVisit) {
-            const lastVisitDate = new Date(lastVisit);
-            const diffDays = Math.floor((now - lastVisitDate) / (1000 * 60 * 60 * 24));
-            const message = diffDays === 0 ? 'Welcome back! You visited earlier today.' :
-                `Welcome back! You last visited ${diffDays} days ago.`;
-            document.getElementById('last-visit-message').textContent = message;
-        } else {
-            document.getElementById('last-visit-message').textContent = 'Welcome! This is your first visit.';
-        }
-
-        localStorage.setItem(lastVisitKey, now.toISOString());
     }
 });
