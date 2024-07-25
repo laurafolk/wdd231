@@ -99,8 +99,8 @@
         padding: 0.5rem 1rem;
         border: none;
         border-radius: 5px;
-        background-color: #4F345A;
-        color: #8FA998;
+        background-color: #8FA998;
+        color: #4F345A;
         cursor: pointer;
         transition: background-color 0.3s;
     }
