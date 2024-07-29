@@ -1,0 +1,101 @@
+@media screen and (max-width: 640px) {
+    body {
+        background-color: #D6D5B3;
+        font-family: 'Oregano', 'Georgia', 'serif';
+        font-size: 18px; /* Adjusted font size for better readability */
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column; /* Stack logo and navigation vertically */
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background-color: #8FA998;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row; /* Stack links vertically */
+        align-items: center;
+        width: 100%; /* Full width for nav items */
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #4F345A;
+        padding: 10px;
+        font-size: 1.2em; /* Smaller font size for better fit */
+        width: 100%; /* Full width for each link */
+        box-sizing: border-box; /* Include padding in width calculation */
+        text-align: center;
+    }
+
+    .contactus-grid {
+        display: grid; /* Single column layout */
+        /* padding: 1rem; */
+        gap: 1rem; /* Adjusted gap for better spacing */
+        padding-top: 2rem;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .contactus-grid img {
+        width: 100%;
+        border-width: 1.5rem; /* Adjust border width for mobile */
+        box-shadow: 15px 15px 25px; /* Softer shadow for mobile */
+        border-radius: 10px;
+        border: 2px solid #4F345A;
+    }
+
+    .contactus-grid form ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .contactus-grid form ul li {
+        margin-bottom: 1rem;
+    }
+
+    .contactus-grid form ul li label {
+        margin-bottom: 0.5rem;
+    }
+
+    .contactus-grid form ul li input,
+    .contactus-grid form ul li textarea {
+        font-size: 1em; /* Adjust input font size */
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #4F345A;
+        border-radius: 10px;
+        border-width: 2.5px;
+    }
+
+    .contactus-grid form ul li button {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #8FA998;
+        color: #4F345A;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .contactus-grid form ul li button:hover {
+        background-color: #4F345A;
+        color: #8FA998;
+    }
+
+    footer {
+        background-color: #8FA998;
+        color: #4F345A;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+        text-align: center;
+        font-family: 'Oregano';
+        font-weight: 700;
+    }
+}

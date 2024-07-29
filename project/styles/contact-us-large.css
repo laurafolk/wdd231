@@ -106,7 +106,8 @@
     }
     
     .contactus-grid form ul li button:hover {
-        background-color: #8FA998;
+        background-color: #4F345A;
+        color: #8FA998;
     }
 
     footer {
