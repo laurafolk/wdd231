@@ -67,8 +67,8 @@
     }
 
     .product img {
-        /* width: 100%; */
-        max-width: 400px;
+        width: 80%;
+        /* max-width: 400px; */
         transition: transform 0.3s; /* Smooth transition effect */
         border: 2px solid #4F345A;
         border-radius: 10px;
