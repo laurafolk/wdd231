@@ -1,15 +1,15 @@
 @media screen and (max-width: 640px) {
-    * {
+    /* * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    
+     */
     body {
         font-family: 'Poetsen', sans-serif;
-        margin: 0;
+        /* margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        box-sizing: border-box; */
     }
     
     header {
@@ -108,10 +108,11 @@
         max-width: 80%;
         margin: 0 auto;
         padding: 20px;
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
         align-items: center;
-        /* display: grid; */
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 20px;
     }
     
@@ -205,9 +206,5 @@
         text-align: center;
         background-color: #6B4E71;
         color: #F6F8FF;
-    }
-    
-    footer p {
-        margin: 0.5rem 0;
     }
 }

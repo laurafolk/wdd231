@@ -92,8 +92,16 @@
         grid-column: 2 / 3;
     } */
 
-    #course-work, #place {
+    #place {
         grid-column: span 1;
+        width: 70%;
+        height: 60%;
+    }
+
+    #course-work {
+        /* grid-column: span 1; */
+        grid-column: span 1;
+        width: 70%;
     }
 
     #school {
@@ -135,6 +143,7 @@
     .course-box {
         /* grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr; */
+        display: flex;
         justify-content: space-evenly;
     }
 
@@ -143,7 +152,7 @@
         color: #F6F8FF;
         /* border: none; */
         border-radius: 8px;
-        padding: 20px 30px;
+        padding: 10px 20px;
     }
     
     .course-box button:hover {
@@ -181,8 +190,8 @@
         color: #F6F8FF;
     }
     
-    footer p {
+    /* footer p {
         margin: 0.5rem 0;
-    }
+    } */
     
 }
