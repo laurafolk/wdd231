@@ -68,12 +68,6 @@ label {
     margin-left: 5px;
 }
 
-/* .required-text {
-    color: red;
-    font-size: 0.8em;
-    margin-left: 5px;
-} */
-
 input, select, textarea {
     padding: 10px;
     font-size: 1rem;
