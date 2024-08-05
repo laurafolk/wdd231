@@ -92,16 +92,8 @@
         grid-column: 2 / 3;
     } */
 
-    #place {
+    #course-work, #place {
         grid-column: span 1;
-        width: 70%;
-        height: 60%;
-    }
-
-    #course-work {
-        /* grid-column: span 1; */
-        grid-column: span 1;
-        width: 70%;
     }
 
     #school {

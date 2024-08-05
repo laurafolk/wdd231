@@ -171,16 +171,24 @@
         font-size: 0.9rem;
         color: black;
     }
+
+    .course-box {
+        display: flex;
+        justify-content: space-evenly;
+    }
     
     .course-box button {
         background-color: #6B4E71;
         color: #F6F8FF;
-        border: none;
+        /* border: none; */
+        border-radius: 8px;
         padding: 20px 30px;
     }
     
     .course-box button:hover {
         background-color: #6B4E71;
+        color: #4F345A;
+        border-radius: 8px;
     }
     
     .course-con {
