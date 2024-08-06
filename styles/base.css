@@ -1,15 +1,8 @@
-@media screen and (max-width: 640px) {
-    /* * {
+    body {
+        font-family: 'Poetsen', sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
-     */
-    body {
-        font-family: 'Poetsen', sans-serif;
-        /* margin: 0;
-        padding: 0;
-        box-sizing: border-box; */
     }
     
     header {
@@ -34,16 +27,16 @@
         height: auto;
         border-radius: 50%;
     }
-    
-    /* #menu {
+
+    #menu {
         font-size: 1.5rem;
         border: 0;
         background: none;
         color: #F6F8FF;
         position: absolute;
-        top: 10px;
-        right: 15px;
-    } */
+        top: 1rem;
+        right: 1rem;
+    }
     
     /*Apperance for the button when open class is off*/
     #menu::before {
@@ -56,27 +49,18 @@
         content: "X";
     }
     
-    #menu {
-        font-size: 1.5rem;
-        border: 0;
-        background: none;
-        color: #F6F8FF;
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-    }
-    
     .open {
         display: block;
     }
     
     nav {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        /* flex-direction: row; */
         width: 100%;        
         background-color: #53687E;
         justify-content: space-around;
-        padding: 1rem 0;
+        /* padding: 1rem 0; */
     }
     
     nav a {
@@ -87,10 +71,6 @@
         font-size: 1.2rem;
         padding: 1rem;
     }
-    
-    /* nav a.active {
-        border-bottom: 2px solid #6B4E71;
-    } */
     
     nav a:hover {
         background-color: #ADA8B6;
@@ -104,36 +84,20 @@
     
     /* Main Styles */
     main {
-        /* width: 80%; */
-        max-width: 80%;
+        max-width: 90%;
         margin: 0 auto;
         padding: 20px;
-        /* display: flex;
-        flex-direction: column; */
         align-items: center;
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
+        justify-items: center;
     }
-    
-    /* main h2 {
-        text-align: center;
-        font-size: 2rem;
-        margin: 0;
-    }
-    
-    main h3 {
-        display: grid;
-        grid-template-rows: auto;
-        text-align: center;
-        font-size: 2rem;
-    } */
     
     .card {
-        /* display: grid; */
-        width: 90%;
+        /* width: 90%; */
+        width: 100%;
         background-color: #F6F8FF;
-        /* padding: 20px; */
         padding: 1rem;
         margin: 1rem 0;
         box-shadow: 0 0 10px #53687E;
@@ -145,18 +109,13 @@
         border-radius: 15px;
     }
     
-    /* Course card styles */
-    /* .course-card {
-        display: grid;
-        background-color: #F6F8FF;
-        padding: 20px;
-        border: 4px solid #53687E;
-        border-radius: 10px;
+    .course-card {
+        border: 2px solid #4F345A;
+        padding: 10px;
         margin-bottom: 10px;
-        box-shadow: 0 4px 8px #53687E;
-        transition: transform 0.2s ease;
-    } */
-    
+    }
+
+    /* Course card styles */   
     .course-card:hover {
         transform: scale(1.02);
     }
@@ -180,13 +139,12 @@
     .course-box button {
         background-color: #6B4E71;
         color: #F6F8FF;
-        /* border: none; */
         border-radius: 8px;
         padding: 20px 30px;
     }
     
     .course-box button:hover {
-        background-color: #6B4E71;
+        background-color: #ADA8B6;
         color: #4F345A;
         border-radius: 8px;
     }
@@ -207,7 +165,6 @@
     }
     
     footer {
-        /* background-color: #53599A; */
         width: 100%;
         display: inline-block;
         font-size: 1.5rem;
@@ -215,4 +172,3 @@
         background-color: #6B4E71;
         color: #F6F8FF;
     }
-}
