@@ -75,6 +75,7 @@
     
     .product-row {
         display: flex; /* Arrange products in a row */
+        flex-direction: row;
         justify-content: space-between; /* Space between products */
         align-items: center; /* Align items vertically */
         margin-bottom: 2rem; /* Space at the bottom */
