@@ -23,7 +23,7 @@
 
 <body>
     <header>
-        <img src="images/profile-picture.webp" alt="profile" class="responsive">
+        <img src="images/profile-picture.webp" alt="profile" width="150" height="200" class="responsive">
         <h1>Laura M. Folk</h1>
     </header>
     <div id="menu"></div>
@@ -45,7 +45,7 @@
         </section>
         <section class="card" id="place">
             <h2>Saint Louis, Missouri</h2>
-            <img src="images/saint-louis-temple.webp" alt="saint-louis-temple" class="responsive">
+            <img src="images/saint-louis-temple.webp" alt="saint-louis-temple" width="400" height="495" class="responsive">
         </section>
         <section class="card" id="school">
             <h3>Web and Computer Programming Certificate</h3>
@@ -90,9 +90,7 @@
             const totalCredits = courses.reduce((total, course) => total + course.credits, 0);
 
             totalCreditsElement.innerText = `Total Credits: ${totalCredits}`;
-        });
-
-        
+        });        
     </script>
 </body>
 

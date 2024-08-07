@@ -55,12 +55,12 @@
     
     nav {
         display: flex;
-        flex-direction: column;
-        /* flex-direction: row; */
+        /* flex-direction: column; */
+        flex-direction: row;
         width: 100%;        
         background-color: #53687E;
         justify-content: space-around;
-        /* padding: 1rem 0; */
+        padding: 1rem 0;
     }
     
     nav a {
@@ -109,11 +109,11 @@
         border-radius: 15px;
     }
     
-    .course-card {
+    /* .course-card {
         border: 2px solid #4F345A;
         padding: 10px;
         margin-bottom: 10px;
-    }
+    } */
 
     /* Course card styles */   
     .course-card:hover {
