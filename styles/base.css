@@ -1,10 +1,10 @@
 
-    /* body {
+    body {
         font-family: 'Poetsen', sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    } */
+    }
     
     header {
         width: 100%;
@@ -12,7 +12,7 @@
         align-items: center;
         justify-content: space-evenly;
         font-family: 'Poetsen';
-        font-size: 1rem;
+        font-size: 0.75rem;
         background-color: #6B4E71;
         color: #F6F8FF;
         padding: 1rem;
@@ -160,7 +160,7 @@
     .course {
         margin: 0.5rem 0;
         padding: 20px;
-        width: 80%;
+        width: 70%;
         background-color: #6B4E71;
         text-align: center;
         color: #F6F8FF;
@@ -173,4 +173,7 @@
         text-align: center;
         background-color: #6B4E71;
         color: #F6F8FF;
+        padding: 1rem;
+        margin-top: 2rem;
+        font-family: 'Poetsen';
     }
