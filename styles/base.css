@@ -7,12 +7,13 @@
     }
     
     header {
-        width: 100%;
+        /* width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         font-family: 'Poetsen';
-        font-size: 0.75rem;
+        font-size: 0.75rem; */
+        text-align: center;
         background-color: #6B4E71;
         color: #F6F8FF;
         padding: 1rem;
@@ -117,6 +118,17 @@
         margin-bottom: 10px;
     } */
 
+    /* Add the below on 08-10-24 to centering the card horizontally and try and fix performance. */
+    #school {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
     /* Course card styles */   
     .course-card:hover {
         transform: scale(1.02);
@@ -135,14 +147,21 @@
 
     .course-box {
         display: flex;
-        justify-content: space-evenly;
+        /* corrected the below from evenly to center on 08-10-24 */
+        justify-content: center;
+        /* added gap and margin top on 08-10-24 */
+        gap: 10px;
+        margin-top: 10px;
     }
     
     .course-box button {
         background-color: #6B4E71;
         color: #F6F8FF;
         border-radius: 8px;
-        padding: 20px 30px;
+        padding: 10px 20px;
+        /* added the below on 08-10-24 */
+        font-size: 16px;
+        cursor: pointer;
     }
     
     .course-box button:hover {
