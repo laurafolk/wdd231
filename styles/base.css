@@ -161,7 +161,7 @@
         border-radius: 8px;
         padding: 10px 50px;
         /* added the below on 08-10-24 */
-        font-size: 16px;
+        font-size: 20px;
         /* cursor: pointer; */
     }
     
@@ -180,7 +180,7 @@
     .course {
         margin: 0.5rem 0;
         padding: 20px 70px;
-        width: 90%;
+        width: 70%;
         border-radius: 8px;
         background-color: #6B4E71;
         text-align: center;
