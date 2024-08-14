@@ -89,8 +89,9 @@
         max-width: 90%;
         /* max-width: 100%; */
         margin: 0 auto;
+        /* padding: 1rem; */
         padding: 20px;
-        /* align-items: center; */
+        align-items: center;
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
@@ -98,8 +99,8 @@
     }
     
     .card {
-        /* width: 85%; */
-        width: 100%;
+        width: 85%;
+        /* width: 100%; */
         background-color: #F6F8FF;
         padding: 1rem;
         margin: 1rem 0;
