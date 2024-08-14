@@ -98,8 +98,8 @@
     }
     
     .card {
-        /* width: 90%; */
-        width: 100%;
+        width: 85%;
+        /* width: 100%; */
         background-color: #F6F8FF;
         padding: 1rem;
         margin: 1rem 0;
@@ -152,16 +152,17 @@
         /* added gap and margin top on 08-10-24 */
         gap: 10px;
         margin-top: 10px;
+        margin-bottom: 10px;
     }
     
     .course-box button {
         background-color: #6B4E71;
         color: #F6F8FF;
         border-radius: 8px;
-        padding: 10px 20px;
+        padding: 10px 50px;
         /* added the below on 08-10-24 */
         font-size: 16px;
-        cursor: pointer;
+        /* cursor: pointer; */
     }
     
     .course-box button:hover {
@@ -178,8 +179,9 @@
     
     .course {
         margin: 0.5rem 0;
-        padding: 20px;
-        width: 70%;
+        padding: 20px 70px;
+        width: 90%;
+        border-radius: 8px;
         background-color: #6B4E71;
         text-align: center;
         color: #F6F8FF;
