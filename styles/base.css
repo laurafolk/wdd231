@@ -57,7 +57,7 @@
     
     nav {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         /* flex-direction: row; */
         width: 100%;        
         background-color: #53687E;
@@ -99,8 +99,8 @@
     }
     
     .card {
-        display: grid;
-        width: 90%;
+        /* display: grid; */
+        width: 80%;
         /* width: 100%; */
         background-color: #F6F8FF;
         padding: 20px;
