@@ -15,12 +15,12 @@
         font-size: 1rem;
         background-color: #6B4E71;
         color: #F6F8FF;
-        padding: 1rem;
+        /* padding: 1rem; */
     }
 
     .responsive {
         max-width: 75%;
-        /* height: auto; */
+        height: auto;
         align-items: center;
     }
 
@@ -62,7 +62,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        /* justify-items: center; */
+        justify-items: center;
     } 
 
     .card {
