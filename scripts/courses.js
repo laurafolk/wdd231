@@ -7,6 +7,7 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
+//Below are the courses and description for each required for Web and Computer Programmin
 const courses = [
     {
         subject: 'CSE',
@@ -87,47 +88,6 @@ const courses = [
     },
 ];
 
-// function loadCourses() {
-//     const courseList = document.getElementById('course-list');
-//     let totalCredits = 0;
-//     courses.forEach((course) => {
-//         const courseItem = document.createElement('li');
-//         courseItem.classList.add('course-card');
-//         const courseLink = document.createElement('a');
-//         courseLink.href = '#';
-//         const courseTitle = document.createElement('strong');
-//         courseTitle.textContent = `${course.subject} ${course.number}: ${course.title} (${course.credits} credits)`;
-//         const courseDescription = document.createElement('p');
-//         courseDescription.textContent = course.description;
-//         courseLink.appendChild(courseTitle);
-//         courseLink.appendChild(courseDescription);
-//         courseItem.appendChild(courseLink);
-//         courseList.appendChild(courseItem);
-//         totalCredits += course.credits;
-//     });
-//     document.getElementById('totalCredits').textContent = `Total Credits: ${totalCredits}`;
-// }
-
-// loadCourses();
-
-// const courseButtons = document.querySelectorAll('.course-box button');
-// courseButtons.forEach(button => {
-//     button.addEventListener('click', (event) => {
-//         filterCourses(event.target.id);
-//     });
-// });
-
-// function filterCourses(category) {
-//     const courseElements = document.querySelectorAll('.course-con .course');
-
-//     courseElements.forEach(course => {
-//         if (category === 'all' || course.classList.contains(category)) {
-//             course.style.display = 'block';
-//         } else {
-//             course.style.display = 'none';
-//         }
-//     });
-// }
 function loadCourses() {
     const courseContainer = document.getElementById('course-con');
     const courseList = document.getElementById('course-list');
