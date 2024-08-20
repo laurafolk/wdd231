@@ -200,11 +200,12 @@
     footer {
         width: 100%;
         /* display: inline-block; */
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
         text-align: center;
         background-color: #6B4E71;
         color: #F6F8FF;
         padding: 1rem;
         margin-top: 2rem;
         font-family: 'Poetsen';
+        font-size: 18px;
     }
