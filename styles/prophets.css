@@ -1,20 +1,27 @@
   /*Mobile View */
   @media (max-width: 640px) {
     #cards {
-        display: flex;
+        grid-template-columns: 1fr;
     }
 
     .card {
         padding: 12px;
         margin: 12px;
         border-radius: 6px;
+        /* width: 100%; */
+        /* box-sizing: border-box; */
     }
 
     .card h2 {
         font-size: 1.2rem;
+        /* text-align: center; */
+        /* align-items: center; */
     }
 
     .card img {
-        max-width: 100%;
+        max-width: 80%;
+        /* max-width: 100%; */
+        /* height: auto; */
+        /* display: block; */
     }
   }
